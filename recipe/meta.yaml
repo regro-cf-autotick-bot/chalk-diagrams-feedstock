@@ -1,5 +1,5 @@
 {% set name = "chalk-diagrams" %}
-{% set version = "0.1.2" %}
+{% set version = "0.2.2" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/chalk-diagrams-{{ version }}.tar.gz
-  sha256: 2dd03c576a52f171ffa69e3d8da0fd189c0cae44fb7dbce0f573c4ffc8979464
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 2c7ebebc4c09d00a27d91955d9294962fa0ea676b2a3d098ac3d22b3b6e70af0
 
 build:
   number: 0
